@@ -21,7 +21,9 @@ app.use(cors({
 
 app.use("/api/v1/users",userRouter);
 app.use("/api/v1/task",taskRouter); 
-
+app.get("/",(res,req)=>{
+    res.json("nice working")
+});
 app.use(errorMiddleware);
 app.listen(process.env.PORT,()=>{
     console.log(`server is working man on: ${process.env.PORT} in ${process.env.NODE_ENV} mode`);
