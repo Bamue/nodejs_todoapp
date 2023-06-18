@@ -21,8 +21,8 @@ app.use(cors({
 
 app.use("/api/v1/users",userRouter);
 app.use("/api/v1/task",taskRouter); 
-app.get("/",(res,req)=>{
-    res.json("nice working")
+app.get("/",(req,res)=>{
+    res.send("nice working");
 });
 app.use(errorMiddleware);
 app.listen(process.env.PORT,()=>{
