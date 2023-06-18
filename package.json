@@ -8,6 +8,9 @@
     "start": "set NODE_ENV=DEVELOPMENT&&node server.js",
     "dev": "set NODE_ENV=DEVELOPMENT&&nodemon server.js"
   },
+  "engines":{
+    "node":">=14.20.1"
+  },
   "author": "",
   "license": "ISC",
   "dependencies": {
